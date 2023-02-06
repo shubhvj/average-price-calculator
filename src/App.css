@@ -1,0 +1,196 @@
+.App {
+  text-align: center;
+  margin: 0 auto;
+  min-height: 90vh;
+}
+
+a {
+  text-decoration: none;
+  color: brown;
+}
+
+.App header {
+  background-color: #181717;
+  max-height: 10vh;
+  min-height: 50px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
+  max-height: 90vh;
+  flex: 1;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 350px;
+  padding: 15px;
+  margin: 10px 3px;
+}
+
+.inputfield {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+button {
+  max-width: 350px;
+  width: 350px;
+  padding: 20px;
+  margin: 0 3px;
+  cursor: pointer;
+  font-size: 16px;
+  background: none;
+  outline: none;
+}
+
+button:hover {
+  background-color: #f1f1f1;
+  transition: 0.3s ease-in;
+}
+
+.buttondiv {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 22px;
+  background-color: PapayaWhip;
+  max-width: 100%;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 1000;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.heading {
+  margin-bottom: 40px;
+}
+
+.footer {
+  min-height:50px; 
+  max-height:50px; 
+  padding: 10px;
+  background:PapayaWhip;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  padding: 10px;
+}
+
+@media screen and (max-width: 790px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .footer {
+    padding: 5px;
+    min-height:50px; 
+    max-height:50px; 
+  }
+  .section1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section2 {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    width: 350px;
+    padding: 15px;
+    margin: 10px 3px;
+  }
+  button {
+    width: 2350px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section2 {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    width: 200px;
+    padding: 15px;
+    margin: 10px 3px;
+  }
+  button {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .App header h2 {
+    font-size: 20px;
+  }
+  .buttondiv {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  button {
+    margin: 10px;
+  }
+  .buttondiv {
+    flex-direction: column;
+  }
+}
